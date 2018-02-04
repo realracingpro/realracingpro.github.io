@@ -1,0 +1,160 @@
+@charset "UTF-8"
+
+/* Estrutura padrão */
+html, body, header, article, aside, section, footer, nav {
+	padding: 0px;
+	margin: 0px;
+}
+p, a, ul, li {
+	padding: 0px;
+	margin: 0px;
+}
+html {
+    background-color: #4a4a4a;
+}
+body {
+    background-color: white;
+    font-family: "Verdana", "Impact", "Liberation Sans", "Arial", sans-serif;
+	font-size: 0.9em;
+    margin: 0px auto;
+    width: 100%;
+}
+article {
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    margin: 10px auto 20px auto;
+    max-width: 800px;
+    min-height: calc(100vh - 102px);
+    width: 95%;
+}
+footer {
+    background-color: #111;
+    font-size: 12px;
+    height: 34px;
+    text-align: center;
+    clear: both;
+    width:100%;
+}
+footer p {
+    padding: 10px;
+    color: #555555;
+    font-size: 0.8em;
+}
+
+/* Estilos de texto */
+h1, h2, h3, h4, h5, h6 {
+	padding: 5px;
+	margin: 0px 0px;
+    background-color: #5d5d5d;
+    color: white;
+}
+p {
+    color: black;
+    line-height: 1.5em;
+	margin: 10px 20px;
+    text-decoration: none;
+}
+a {
+    color: #00a7ff;
+    text-decoration: none;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Especiais */
+.hide {
+    display: none;
+}
+.autor {
+	font-size: 0.7em;
+    color: #a3a3a3;
+}
+.titulo {
+    font-weight: bolder;
+    font-size: 1.2em;
+	padding: 10px 0;
+}
+.small {
+    font-size: 0.8em;
+}
+
+/* Listas do Article */
+article ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    text-decoration: none;
+}
+article ul li { 
+    background: #fafafa;
+    line-height: 1.5em;
+    margin: 5px 0px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+article ul li:before {
+    color: gray;
+    content: "•";
+    padding-right: 8px;
+}
+article ul li a {
+    text-decoration: none;
+}
+
+/* Menu Topo */
+.menu_topo {
+    text-align: center;
+    background-color: rgb(198, 198, 198);
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+}
+.menu_topo ul {
+    margin: 0px;
+    padding: 10px 0px;
+}
+.menu_topo ul li {
+    text-shadow: 0px 0px 5px black;
+    display: inline;
+    padding: 10px 40px;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #bfbfbf;
+}
+.menu_topo ul li:hover {
+    background-color: #808080;
+}
+
+/* Classes do Filtro */
+.filtro {
+	margin: 0px;
+	padding: 10px 20px;
+    padding-bottom: 0px;
+}
+.filtro p {
+    margin: 0;
+    padding: 0;
+}
+.filtro ul {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+.filtro li {
+    margin: 1px 0;
+    padding: 5px;
+}
+.filtro_hide ul, .filtro_show ul { 
+    list-style: none;
+}
+.filtro_hide li, .filtro_show li { 
+    display: inline-block;
+}
+.filtro_hide { 
+    display: none; 
+}
+.filtro p a, .filtro ul li a {
+    cursor: pointer;
+}
