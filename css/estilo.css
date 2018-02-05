@@ -25,13 +25,13 @@ article {
     border-right: 1px solid #d3d3d3;
     margin: 10px auto 20px auto;
     max-width: 800px;
-    min-height: calc(100vh - 102px);
+    min-height: calc(100vh - 122px);
     width: 95%;
 }
 footer {
     background-color: #111;
     font-size: 12px;
-    height: 34px;
+    height: 58px;
     text-align: center;
     clear: both;
     width:100%;
