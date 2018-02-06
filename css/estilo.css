@@ -1,13 +1,13 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 /* Estrutura padrão */
-html, body, header, article, aside, section, footer, nav {
-	padding: 0px;
-	margin: 0px;
+article, aside, body, footer, header, html, nav, section {
+	margin: 0;
+	padding: 0;
 }
 p, a, ul, li {
-	padding: 0px;
-	margin: 0px;
+	margin: 0;
+	padding: 0;
 }
 html {
     background-color: #4a4a4a;
@@ -16,7 +16,7 @@ body {
     background-color: white;
     font-family: "Verdana", "Impact", "Liberation Sans", "Arial", sans-serif;
 	font-size: 0.9em;
-    margin: 0px auto;
+    margin: 0 auto;
     width: 100%;
 }
 article {
@@ -26,28 +26,28 @@ article {
     margin: 10px auto 20px auto;
     max-width: 800px;
     min-height: calc(100vh - 122px);
-    width: 95%;
+    width: calc(95% - 2px);
 }
 footer {
     background-color: #111;
+    clear: both;
     font-size: 12px;
     height: 58px;
     text-align: center;
-    clear: both;
     width:100%;
 }
 footer p {
-    padding: 10px;
     color: #555555;
     font-size: 0.8em;
+    padding: 10px;
 }
 
 /* Estilos de texto */
 h1, h2, h3, h4, h5, h6 {
-	padding: 5px;
-	margin: 0px 0px;
     background-color: #5d5d5d;
     color: white;
+	margin: 0;
+	padding: 5px;
 }
 p {
     color: black;
@@ -69,12 +69,12 @@ nav ul li a {
     display: none;
 }
 .autor {
-	font-size: 0.7em;
     color: #a3a3a3;
+	font-size: 0.7em;
 }
 .titulo {
-    font-weight: bolder;
     font-size: 1.2em;
+    font-weight: bolder;
 	padding: 10px 0;
 }
 .small {
@@ -91,7 +91,7 @@ article ul {
 article ul li { 
     background: #fafafa;
     line-height: 1.5em;
-    margin: 5px 0px;
+    margin: 5px 0;
     padding: 8px 10px;
     text-decoration: none;
 }
@@ -106,22 +106,22 @@ article ul li a {
 
 /* Menu Topo */
 .menu_topo {
-    text-align: center;
     background-color: rgb(198, 198, 198);
-    padding: 0px;
-    margin: 0px 0px 10px 0px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align: center;
 }
 .menu_topo ul {
-    margin: 0px;
-    padding: 10px 0px;
+    margin: 0;
+    padding: 10px 0;
 }
 .menu_topo ul li {
-    text-shadow: 0px 0px 5px black;
-    display: inline;
-    padding: 10px 40px;
-    font-weight: bolder;
-    color: #ffffff;
     background-color: #bfbfbf;
+    color: #ffffff;
+    display: inline;
+    font-weight: bolder;
+    padding: 10px 40px;
+    text-shadow: 0 0 5px black;
 }
 .menu_topo ul li:hover {
     background-color: #808080;
@@ -129,9 +129,9 @@ article ul li a {
 
 /* Classes do Filtro */
 .filtro {
-	margin: 0px;
+	margin: 0;
 	padding: 10px 20px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 .filtro p {
     margin: 0;
