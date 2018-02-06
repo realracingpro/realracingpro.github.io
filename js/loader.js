@@ -13,6 +13,7 @@ function getUrlVars() {
 // Carrega Header, Article (content) e Footer
 $(document).ready(function () {
     "use strict";
+    $.ajaxSetup({ cache: false });
     
     $("#fade").hide(0, function () {
         $("#fade").fadeOut(300, function () {
