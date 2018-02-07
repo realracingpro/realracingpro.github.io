@@ -25,4 +25,5 @@ function loadutf(type) {
 loadfile("css/estilo.css", "css");
 loadfile("js/filtro.js", "js");
 loadfile("js/loader.js", "js");
+loadfile("js/scroll.js", "js");
 loadutf("UTF-8");

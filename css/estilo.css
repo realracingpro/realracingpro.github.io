@@ -25,26 +25,27 @@ article {
     border-right: 1px solid #d3d3d3;
     margin: 10px auto 20px auto;
     max-width: 800px;
-    min-height: calc(100vh - 122px);
+    min-height: calc(100vh - 117px);
     width: calc(95% - 2px);
 }
 footer {
     background-color: #111;
     clear: both;
     font-size: 12px;
-    height: 58px;
+    height: 48px;
     text-align: center;
     width:100%;
 }
 footer p {
     color: #555555;
     font-size: 0.8em;
-    padding: 10px;
+    padding-top: 10px;
 }
+
 
 /* Estilos de texto */
 h1, h2, h3, h4, h5, h6 {
-    background-color: #5d5d5d;
+    background: linear-gradient(#a5a5a5, #888888);
     color: white;
 	margin: 0;
 	padding: 5px;
@@ -104,28 +105,38 @@ article ul li a {
     text-decoration: none;
 }
 
-/* Menu Topo */
-.menu_topo {
-    background-color: rgb(198, 198, 198);
-    margin: 0 0 10px 0;
-    padding: 0;
-    text-align: center;
+/*---------------------------------------------*/
+header {
+    height: 37px;
+	background: linear-gradient(#717171, #2c2c2c);
 }
-.menu_topo ul {
-    margin: 0;
-    padding: 10px 0;
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    overflow: hidden;
 }
-.menu_topo ul li {
-    background-color: #bfbfbf;
-    color: #ffffff;
-    display: inline;
-    font-weight: bolder;
-    padding: 10px 40px;
-    text-shadow: 0 0 5px black;
+.logo {
+    float: left;
+    display: block;
+    margin: 10px 0;
 }
-.menu_topo ul li:hover {
-    background-color: #808080;
+.wrapper ul {
+    float: right;
 }
+.wrapper ul li {
+    display: inline-block;
+    background: linear-gradient(#777777, #464646);
+    padding: 10px 20px;
+}
+.wrapper ul li:hover {
+    background: linear-gradient(#868686, #6a6a6a);
+}
+.wrapper a {
+    color: #fff;
+    text-decoration: none;
+}
+/*---------------------------------------------*/
 
 /* Classes do Filtro */
 .filtro {
