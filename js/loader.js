@@ -14,13 +14,12 @@ function getUrlVars() {
 $(document).ready(function () {
     "use strict";
     $.ajaxSetup({ cache: false });
-    
-    $("#header").load("estrutura.html #header");
-    $("#footer").load("estrutura.html #footer");
-        
+            
     $("#fade").hide(0, function () {
         $("#fade").fadeOut(300, function () {
             $("#fade").hide().fadeIn(800);
+            $("#header").load("estrutura.html #header");
+            $("#footer").load("estrutura.html #footer");
         });
     });
     
