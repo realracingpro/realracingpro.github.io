@@ -9,7 +9,7 @@ $('a[href^="#"]').on('click', function (e) {
         }, 500);
     } else {
         $('html, body').animate({
-            scrollTop: targetOffset - 10
+            scrollTop: targetOffset - 47
         }, 500);
     }
 });
