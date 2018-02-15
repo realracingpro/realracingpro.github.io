@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 /* Estrutura padrão */
 article, aside, body, footer, header, html, nav, section {
 	margin: 0;
@@ -22,30 +28,18 @@ body {
 article {
     border-bottom: 1px solid #d3d3d3;
     border-left: 1px solid #d3d3d3;
+    border-radius: 5px;
     border-right: 1px solid #d3d3d3;
     margin: 10px auto 20px auto;
     max-width: 800px;
-    min-height: calc(100vh - 117px);
     width: calc(95% - 2px);
 }
-footer {
-    background-color: #111;
-    clear: both;
-    font-size: 12px;
-    height: 48px;
-    text-align: center;
-    width:100%;
-}
-footer p {
-    color: #555555;
-    font-size: 0.8em;
-    padding-top: 10px;
-}
-
 
 /* Estilos de texto */
 h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(#a5a5a5, #888888);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     color: white;
 	margin: 0;
 	padding: 5px;
@@ -106,6 +100,7 @@ article ul li a {
 }
 
 /*---------------------------------------------*/
+/* Classes do Header */
 header {
     height: 37px;
 	background: linear-gradient(#717171, #2c2c2c);
@@ -153,6 +148,41 @@ header {
     color: #fff;
     text-decoration: none;
 }
+
+/*---------------------------------------------*/
+/* Classes do Header */
+footer {
+    background-color: #111;
+    clear: both;
+    font-size: 12px;
+    height: 80px;
+    width:100%;
+}
+footer div {
+    display: grid;
+    height: 100%;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
+    padding: 5px 0;
+}
+footer div p {
+    color: #555555;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0; margin: 0;
+}
+
+.social {
+    font-size: 1em;
+}
+.social a {
+    padding: 0 8px;
+}
+
+article {
+    min-height: calc(100vh - 147px);
+}
+
 /*---------------------------------------------*/
 
 /* Classes do Filtro */
@@ -203,7 +233,6 @@ header {
     padding-right: 20px;
     border-radius: 10px;
 }
-
 .3d {
     text-shadow: 
         0 1px 0 #ccc,
