@@ -14,7 +14,7 @@ function getUrlVars() {
 $(document).ready(function () {
     "use strict";
     $.ajaxSetup({ cache: false });
-    
+        
     $("#fade").hide(0, function () {
         $("#fade").fadeOut(300, function () {
             $("#fade").hide().fadeIn(800);

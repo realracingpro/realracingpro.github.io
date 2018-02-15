@@ -1,12 +1,3 @@
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("topBtn").style.display = "block";
-    } else {
-        document.getElementById("topBtn").style.display = "none";
-    }
-}
-
 $('a[href^="#"]').on('click', function (e) {
     "use strict";
     e.preventDefault();
@@ -16,4 +7,14 @@ $('a[href^="#"]').on('click', function (e) {
     $('html, body').animate({
         scrollTop: targetOffset - 10
     }, 500);
+});
+
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+            $("#topBtn").show(1000);
+		} else {
+            $("#topBtn").hide(1000);
+		}
+	});
 });

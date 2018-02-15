@@ -20,6 +20,9 @@ function loadutf(type) {
     var metautf;
     metautf = document.createElement("meta");
     metautf.setAttribute("charset", type);
+    if (typeof metautf !== "undefined") {
+        document.getElementsByTagName("head")[0].appendChild(metautf);
+    }
 }
 
 loadfile("css/estilo.css", "css");
