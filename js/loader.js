@@ -18,18 +18,21 @@ $(document).ready(function () {
     $("#fade").hide(0, function () {
         $("#fade").fadeOut(300, function () {
             $("#fade").hide().fadeIn(800);
+            $("#header").load("estrutura.html #header");
+            $("#footer").load("estrutura.html #footer");
         });
     });
     
     $("#content").fadeOut(200, function () {
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
+        $("#header").load("estrutura.html #header");
+        $("#footer").load("estrutura.html #footer");
         var pageload = getUrlVars().page;
         if (pageload !== undefined) {
             $("#content").load("pages/" + pageload + ".html");
         } else {
             $("#content").load("pages/index.html");
-        }
+        }       
+        
         $("#content").fadeIn(200);
     });
 });
