@@ -117,9 +117,11 @@ header {
     overflow: hidden;
 }
 .logo {
+    height: 37px;
     float: left;
-    display: block;
-    margin: 10px 0;
+    display: flex;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
     font-weight: bold;
 }
 .logo i {
@@ -130,12 +132,15 @@ header {
     float: right;
 }
 .wrapper ul li {
-    display: inline-block;
     background: linear-gradient(#777777, #464646);
-    font-size: 20px;
-    height: 30px;
-    padding: 3px 20px 0 20px;
-    margin-top: 2px;
+    display: flex;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
+    font-weight: bold;
+    margin-top: 1px;
+    height: 35px;
+    width: 50px;
+    font-size: 18px;
     border-radius: 5%;
     box-shadow:
         inset 1px 1px 2px #4d4d4d,
