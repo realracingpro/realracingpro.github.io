@@ -3,18 +3,23 @@ $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     var id = $(this).attr('href'),
         targetOffset = $(id).offset().top;
-
-    $('html, body').animate({
-        scrollTop: targetOffset - 10
-    }, 500);
+    if (id === "#header") {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    } else {
+        $('html, body').animate({
+            scrollTop: targetOffset - 10
+        }, 500);
+    }
 });
 
 $(document).ready(function(){
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 100) {
-            $("#topBtn").show(1000);
+            $("#topBtn").show(500);
 		} else {
-            $("#topBtn").hide(1000);
+            $("#topBtn").hide(500);
 		}
 	});
 });

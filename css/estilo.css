@@ -16,7 +16,7 @@ p, a, ul, li {
 	padding: 0;
 }
 html {
-    background-color: #4a4a4a;
+    background-color: white;
 }
 body {
     background-color: white;
@@ -102,8 +102,8 @@ article ul li a {
 /*---------------------------------------------*/
 /* Classes do Header */
 header {
-    height: 37px;
 	background: linear-gradient(#717171, #2c2c2c);
+    height: 37px;
 }
 .wrapper {
     width: 80%;
@@ -194,7 +194,14 @@ footer div {
     padding-left: 20px;
 }
 
+header {
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
 article {
+    margin-top: 47px;
     min-height: calc(100vh - 117px);
 }
 
