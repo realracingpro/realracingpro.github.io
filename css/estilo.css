@@ -155,32 +155,47 @@ footer {
     background-color: #111;
     clear: both;
     font-size: 12px;
-    height: 80px;
+    height: 50px;
     width:100%;
 }
 footer div {
-    display: grid;
     height: 100%;
-    align-items: center; /* vertical */
-    justify-content: center; /* horizontal */
-    padding: 5px 0;
+    padding: 0;
 }
-footer div p {
+.footer-limiter {
+    max-width: 800px;
+    width: calc(95% - 2px);
+    margin: 0 auto;
+    padding: 0;
+}
+.footer-desc {
+    align-items: center; /* vertical */
+    display: flex; /* alinhamento */
+    clear: left;
     color: #555555;
     font-size: 0.8em;
-    text-align: center;
-    padding: 0; margin: 0;
+    float: left;
+    height: 50%;
+    margin: 0;
+    padding: 0;
 }
 
 .social {
+    align-items: center; /* vertical */
+    display: flex; /* alinhamento */
     font-size: 1em;
+    float: right;
+    height: 100%;
+    margin: 0;
+    padding: 0; 
 }
 .social a {
-    padding: 0 8px;
+    color: #29576f;
+    padding-left: 20px;
 }
 
 article {
-    min-height: calc(100vh - 147px);
+    min-height: calc(100vh - 117px);
 }
 
 /*---------------------------------------------*/
